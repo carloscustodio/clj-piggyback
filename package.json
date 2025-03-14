@@ -3,19 +3,23 @@
   "displayName": "piggyback",
   "description": "WIP",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carloscustodio/clj-piggyback.git"
+  },
   "engines": {
     "vscode": "^1.97.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onCommand:piggyback.startREPL"],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "clj-piggyback.helloWorld",
-        "title": "Hello World"
+        "command": "piggyback.startREPL",
+        "title": "Start REPL"
       }
     ]
   },
